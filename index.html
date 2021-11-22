@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Page Title</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="nav-wrapper">
+            <div class="left-side">
+                <div class="nav-link-wrapper">
+                    <a href="index.html">Home</a>
+                </div>
+                <div class="nav-link-wrapper">
+                    <a href="about.html">About</a>
+                </div>
+               
+            </div>
+            <div class="right-side">
+                <div class="brand">
+                    <div>YOUSSEF CHOUAY</div>
+                </div>
+                
+            </div>            
+        </div>
+
+        <div class="content-wrapper">
+            <div class="portfolio-items-wrapper">
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(images/coding.jpg)"></div>
+
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src="images/logos/coding.png" alt="">
+                        </div>
+
+                        <div class="subtitle">My software projects !</div>
+                    </div>
+                </div>
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(images/hardware.jpg)"></div>
+
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src="images/logos/hardware.png" alt="">
+                        </div>
+
+                        <div class="subtitle">My hardware projects</div>
+                    </div>
+                </div>
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(images/library.jpg)"></div>
+
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src="images/logos/academics.png" alt="">
+                        </div>
+
+                        <div class="subtitle">Academics</div>
+                    </div>
+                </div>
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(images/skills.jpg)"></div>
+
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src="images/logos/skills.png" alt="">
+                        </div>
+
+                        <div class="subtitle">Tools I work with !</div>
+                    </div>
+                </div>
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(images/links.jpg)"></div>
+
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src="images/logos/links.png" alt="">
+                        </div>
+
+                        <div class="subtitle">Where you can find my work</div>
+                    </div>
+                </div>
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(images/academskills.jpg)"></div>
+
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src="images/logos/academskills.png" alt="">
+                        </div>
+
+                        <div class="subtitle">Extracurricular academic activities</div>
+                    </div>
+                </div>
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(images/languages.jpg)"></div>
+
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src="images/logos/languages.png" alt="">
+                        </div>
+
+                        <div class="subtitle">Languages</div>
+                    </div>
+                </div>
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(images/sports.jpg)"></div>
+
+                    <div class="img-text-wrapper">
+                        
+
+                        <div class="subtitle">Extracurricular sport activities</div>
+                    </div>
+                </div>
+            </div>
+            
+
+        </div>
+    </div>
+</body>
+<script>
+    const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper')
+
+    portfolioItems.forEach(portfolioItem => {
+        portfolioItem.addEventListener('mouseover', () => {
+            portfolioItem.childNodes[1].classList.add('img-darken');
+        })
+
+        portfolioItem.addEventListener('mouseout', () => {
+            portfolioItem.childNodes[1].classList.remove('img-darken');
+        })
+
+        portfolioItem.addEventListener('click', () => {
+            location.href = 'about.html';
+        })
+    })
+</script>
+</html>
